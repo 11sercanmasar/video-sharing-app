@@ -1,0 +1,227 @@
+.cont-all{
+    background-color: #1f1d2d;
+    width: 1080px;
+    height: 80vh;
+}
+
+
+
+.left-side{
+    
+    .col-name, svg, span, hr{
+        color: #67666b;
+    }
+
+    .row1:hover{ 
+        .logo-left{
+    background-color: #ff7551;
+    svg{
+        color: #ffffff;
+    } 
+}
+    .col-name{
+        color: #ffffff;
+    }
+    }
+.row2:hover{ 
+        .logo-left{
+        background-color: #32a7e2;
+        svg{
+            color: #ffffff;
+        } 
+        }
+        .col-name{
+            color: #ffffff;
+        }
+    }
+.row3:hover{ 
+        .logo-left{
+     background-color: #6c5ecf;  
+     svg{
+         color: #ffffff;
+     } 
+    }
+    .col-name{
+        color: #ffffff;
+    }
+}
+}
+    
+
+.logo-left{
+    background-color: grey;
+    background-position: center ;
+    background-size: cover ;
+    margin:2px ;
+    border-radius: 10px ;
+
+    svg{
+    width:15px;
+    height:15px;
+    margin-left: -6px;
+    margin-top: -2px;
+   
+    
+    }
+    margin-right: 5px !important;
+}
+.active{
+    .logo-left{
+        background-color: #ff7551;
+        svg{
+            color: #ffffff;
+        } 
+    }
+        .col-name{
+            color: #ffffff;
+        }
+}
+
+.navbar{
+  background-color:#1f1d2d !important;  
+}
+
+.search{
+    background-color: #fff !important;
+    border: none;  
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    input{
+      color: white; 
+        }
+}
+
+
+.symbol{
+    margin-left: -20px;
+    margin-top: 5px;
+    color: rgb(189, 176, 212);
+}
+
+.user-img{
+   width: 30px;
+   height: 30px; 
+   border-radius: 50%;
+}
+.cursor svg{
+       color: #ffffff ;
+    }
+
+.notify{
+    svg{
+       color: #ffffff;
+    }
+}
+.notification{
+    svg{
+        color: rgb(189, 8, 8);
+       
+    }
+    margin-top: -32px;
+    margin-left: 5px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.left-image{
+    background-color: #31aabc;
+   img{
+       width: 100%;
+       height:150px;
+   }
+
+}
+.right-image{
+background-image: url("https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg"); 
+background-position: center;    
+}
+
+  .img-wrapper{
+ .author-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;  
+    position: absolute; 
+    margin-top: -40px;
+    margin-left: 5px; 
+}
+svg{
+    margin-top: -15px;
+    margin-left: 30px;
+    position: absolute;
+    z-index: 1;    
+    color: #ffffff;
+}
+}
+
+
+ .img-circle{
+     width: 45px;
+     height: 45px;
+     border: 2px solid #ffffff;
+     border-radius: 50%;
+     position: relative;
+ }
+
+ .dot{
+   width: 3px;
+   height: 3px;
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+   margin: 0 6px;
+   vertical-align: middle;
+   display: inline-block;
+ }
+
+ .author-name {
+     font-size: 13px;
+     margin-left: 5px !important;
+ }
+ .author-info{
+    font-size: 13px;
+    margin-left: 5px;  
+ }
+
+ 
+
+ .time-circle{
+    position: relative;
+    margin: -20px 0 0 400px; 
+    border: 1px solid #1f1d2d;
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(21, 13, 13, 0.44);
+    border-radius: 20px;
+    
+    .time{
+        position: fixed;
+        font-size: 12px;
+        color: #ffffff;
+     }
+ }
+
+ .rightPhoto{
+    position: relative;
+}
+
+.photo-ups{
+    position: absolute;
+    z-index: 1;
+}
+
+.main-write{
+    margin-top: -200px;
+}
+
+.imgTwo{
+    margin-top: -20px ;
+}
+.imgTwo{
+    margin-top: -20px ;
+}
+
