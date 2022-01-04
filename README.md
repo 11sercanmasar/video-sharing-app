@@ -2,7 +2,19 @@
  video share
 
 
+### Technologies
+
+- HTML
+- CSS
+- BOOSTRAP
+- SASS
+- JAVASCRİPT
+
+
+
 # images.md
 
 ![](https://assets.codepen.io/3364143/skate-removebg-preview.png)
-![](https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)
+![](https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg)
+
+
