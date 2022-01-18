@@ -2004,7 +2004,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #252836;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -2028,7 +2028,7 @@ progress {
 
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #252836;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -2039,7 +2039,7 @@ progress {
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: var(--placeholder);
   opacity: 1;
 }
 
@@ -2194,7 +2194,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #252836;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2264,7 +2264,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #252836;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -10646,10 +10646,18 @@ fieldset:disabled .btn {
   }
 }
 
+:root {
+  --placeholder: #ffffff;
+}
+
 .cont-all {
   background-color: #1f1d2d;
   width: 1080px;
-  height: 80vh;
+  height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .left-side .col-name, .left-side svg, .left-side span, .left-side hr {
@@ -10725,7 +10733,6 @@ fieldset:disabled .btn {
 }
 
 .search {
-  background-color: #fff !important;
   border: none;
   border-radius: 5px;
   width: 400px;
@@ -10772,6 +10779,8 @@ fieldset:disabled .btn {
 
 .left-image {
   background-color: #31aabc;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .left-image img {
@@ -10781,24 +10790,27 @@ fieldset:disabled .btn {
 
 .right-image {
   background-image: url("https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg");
-  background-position: center;
+  background-position-y: center;
+  background-position-x: right;
+  margin-left: 20px;
+  border-radius: 10px;
 }
 
 .img-wrapper .author-img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  position: absolute;
-  margin-top: -40px;
+  position: relative;
+  margin-top: -70px;
   margin-left: 5px;
 }
 
 .img-wrapper svg {
-  margin-top: -15px;
+  margin-top: -85px;
   margin-left: 30px;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: #f83c3c;
 }
 
 .img-circle {
@@ -10827,24 +10839,24 @@ fieldset:disabled .btn {
 .author-info {
   font-size: 13px;
   margin-left: 5px;
+  width: 150px !important;
 }
 
 .time-circle {
   position: relative;
-  margin: -20px 0 0 400px;
+  margin: -20px 0 0 360px;
   border: 1px solid #1f1d2d;
   width: 40px;
   height: 20px;
-  object-fit: cover;
-  object-position: center;
   background: rgba(21, 13, 13, 0.44);
   border-radius: 20px;
 }
 
 .time-circle .time {
-  position: fixed;
+  position: absolute;
   font-size: 12px;
   color: #ffffff;
+  margin-left: 2px;
 }
 
 .rightPhoto {
@@ -10866,4 +10878,230 @@ fieldset:disabled .btn {
 
 .imgTwo {
   margin-top: -20px;
+}
+
+.wrapperTwo {
+  margin-top: 150px  !important;
+}
+
+.name {
+  margin-top: 150px !important;
+  margin-left: 30px !important;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+}
+
+.rate {
+  font-size: 14px;
+  width: 200px;
+  margin-left: 30px;
+}
+
+.minute {
+  margin-left: 190px;
+  font-size: 13px;
+}
+
+.video-cont {
+  position: relative;
+}
+
+.video-time {
+  position: absolute;
+  z-index: 3;
+  font-size: 13px;
+  color: #ffffff;
+  width: 35px;
+}
+
+.video-time-circle {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 110px;
+  z-index: 2;
+  border: 1px solid #1f1d2d;
+  width: 40px;
+  height: 20px;
+  background: rgba(21, 13, 13, 0.44);
+  border-radius: 20px;
+}
+
+.video-wrapper {
+  position: absolute;
+  z-index: 1;
+}
+
+.video-wrapper video {
+  width: 155px !important;
+  height: 175px !important;
+  border-radius: 15px;
+}
+
+.video-cont:hover video {
+  transform: scaleY(1.4);
+}
+
+.video-cont:hover .video-time-circle {
+  display: none;
+}
+
+.video-cont:hover .video-circle {
+  width: 30px;
+  height: 30px;
+  margin-top: -36px;
+}
+
+.video-cont:hover .author-img {
+  width: 20px;
+  height: 20px;
+}
+
+.video-footer {
+  background-color: #656569;
+  width: 155px !important;
+  height: 120px !important;
+  position: absolute;
+  margin-top: 131px;
+  border-radius: 0 0  10px 10px;
+}
+
+.video-man {
+  position: absolute;
+  font-size: 13px;
+}
+
+.video-name {
+  position: absolute;
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+.video-view {
+  position: absolute;
+  margin-top: 100px;
+  font-size: 13px;
+}
+
+.author-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-top: -123px;
+  margin-left: 101px;
+}
+
+.seperate {
+  color: #ffffff;
+}
+
+.green-dot {
+  color: #0fd61f;
+}
+
+.red-dot {
+  color: #ac1414;
+}
+
+.video-change {
+  border-radius: 15px;
+}
+
+.right-messages {
+  background-color: #252836;
+  height: 255px;
+  margin-left: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.messaging {
+  position: fixed;
+  margin-top: -205px !important;
+  z-index: 2;
+}
+
+input {
+  background: #252836;
+  border: none;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.svg-message {
+  position: fixed;
+  z-index: 2;
+  margin-top: -200px !important;
+  margin-left: 8px;
+  background: #f83c3c;
+  color: white !important;
+  border-radius: 10px;
+  width: 25px !important;
+}
+
+.arrow-message {
+  position: fixed;
+  z-index: 2;
+  margin-top: -200px !important;
+  margin-left: 150px !important;
+  background: #f83c3c;
+  color: white;
+  width: 25px !important;
+  height: 17px;
+  border-radius: 10px;
+}
+
+.modal-message {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeU80VtJy8wtAMmip86IIUFB04TmZk5_nLHeMHq6-4utlU6gGg_Wm-Cue-7nRuBgmsO4E&usqp=CAU");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 10;
+  top: 250px;
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 13px;
+}
+
+.modal-message .send-text {
+  background-color: rgba(50, 183, 201, 0.7);
+}
+
+.modal-message .btn-send {
+  background-color: #ff7551;
+  height: 40px;
+  font-size: 13pt;
+  color: #ffffff;
+  border-radius: 0 0 13px 13px;
+}
+
+.modal-message .writeInput {
+  width: 250px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.modal-message .writeInput::placeholder {
+  color: var(--placeholder);
+}
+
+.modal-message .nameInput {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.modal-message .nameInput::placeholder {
+  color: var(--placeholder);
 }

@@ -17,19 +17,19 @@
             <h3 class="text-light">skateboard</h3>
             <span>MENU</span>
 
-            <div class="row row1 active">
+            <div class="row row1 active ">
                 <div class="col-1 logo-left"> <svg viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M9.135 20.773v-3.057c0-.78.637-1.414 1.423-1.414h2.875c.377 0 .74.15 1.006.414.267.265.417.625.417 1v3.057c-.002.325.126.637.356.867.23.23.544.36.87.36h1.962a3.46 3.46 0 002.443-1 3.41 3.41 0 001.013-2.422V9.867c0-.735-.328-1.431-.895-1.902l-6.671-5.29a3.097 3.097 0 00-3.949.072L3.467 7.965A2.474 2.474 0 002.5 9.867v8.702C2.5 20.464 4.047 22 5.956 22h1.916c.68 0 1.231-.544 1.236-1.218l.027-.009z" />
                     </svg></div>
-                <div class="col-1 col-name">Discover</div>
+                <div class="col-1 col-name discover">Discover</div>
             </div>
             <div class="row row2">
                 <div class="col-1 logo-left"><svg viewBox="0 0 24 24" fill="currentColor">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M10.835 12.007l.002.354c.012 1.404.096 2.657.242 3.451 0 .015.16.802.261 1.064.16.38.447.701.809.905a2 2 0 00.91.219c.249-.012.66-.137.954-.242l.244-.094c1.617-.642 4.707-2.74 5.891-4.024l.087-.09.39-.42c.245-.322.375-.715.375-1.138 0-.379-.116-.758-.347-1.064-.07-.099-.18-.226-.28-.334l-.379-.397c-1.305-1.321-4.129-3.175-5.593-3.79 0-.013-.91-.393-1.343-.407h-.057c-.665 0-1.286.379-1.603.991-.087.168-.17.496-.233.784l-.114.544c-.13.874-.216 2.216-.216 3.688zm-6.332-1.525C3.673 10.482 3 11.162 3 12a1.51 1.51 0 001.503 1.518l3.7-.328c.65 0 1.179-.532 1.179-1.19 0-.658-.528-1.191-1.18-1.191l-3.699-.327z" />
                     </svg></div>
-                <div class="col-1 col-name">Trending</div>
+                <div class="col-1 col-name trending">Trending</div>
             </div>
             <div class="row row3">
                 <div class="col-1 logo-left"><svg viewBox="0 0 24 24" fill="currentColor">
@@ -88,88 +88,392 @@
             <nav class="navbar row">
                 <div class="d-flex nav-items">
                     <form class="d-flex col-5">
-                   
-                        <input class="search " type="search" placeholder="Search" aria-label="Search">
+
+                        <input class="search " type="text" placeholder="Search" aria-label="Search">
                         <div class="symbol"></div>
                     </form>
                     <div class="user-settings d-flex">
-                        <img class="user-img m-1" src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80" alt="">
+                        <img class="user-img m-1"
+                            src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80"
+                            alt="">
                         <div class="user-name text-light fs-7 m-1">Thomas</div>
                         <div class="cursor m-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                              </svg>
-                    </div>
-                        <div class="notify m-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                              </svg>
-                         <div class="notification "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                          </svg></div>
-                         
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
                         </div>
-                       
-                      </div>
+                        <div class="notify m-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>
+                            <div class="notification "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                </svg></div>
+
+                        </div>
+
+                    </div>
                 </div>
-              </nav>
-              <span class="text-light fs-3">Discover</span>
-              <div class="main-side row">
-                  
-                  <div class="col-8 left-image">
-                    <div class="row">               
-                    <div class="text-light col-4 float-start fs-4">How to do Basic Jumping and how to landing safely</div>            
-                    <div class="col-8 "><img src="https://assets.codepen.io/3364143/skate-removebg-preview.png" alt=""></div>                   
+            </nav>
+
+            <div class="main-side row">
+                <span class="text-light fs-3">Discover</span>
+                <div class="col-7 left-image">
+                    <div class="row">
+                        <div class="text-light col-5 float-start fs-4">How to do Basic Jumping and how to landing safely
+                        </div>
+                        <div class="col-7 "><img src="https://assets.codepen.io/3364143/skate-removebg-preview.png"
+                                alt=""></div>
                     </div>
                     <div class="row">
                         <div class="col-1">
-                    <div class="img-wrapper">
-                     <div class="img-circle "></div>
-                    <img class="author-img" src="https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />                  
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                      </svg>
+                            <div class="img-wrapper">
+                                <div class="img-circle "></div>
+                                <img alt="" class="author-img"
+                                    src="https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="author-name text-light row">Thomas Hope</div>
+                            <div class="author-info text-light ">53K views <span class="dot"></span>2 weeks ago </div>
+                            <div class="time-circle"><span class="text-light  time ">7 min</span></div>
+
+                        </div>
                     </div>
-                    </div>
-                    <div class="col-4">
-                    <div class="author-name text-light row">Thomas Hope</div>
-                    <div class="author-info text-light ">53K views <span class="dot"></span>2 weeks ago  </div> 
-                    <div class="time-circle"><span class="text-light  time ">7 min</span></div>
-                    
+
                 </div>
-                </div>
-                
-                </div>
-                  <div class="col-4 right-image">
-                  
-                  <div class="row photo-ups">               
-                    <div class="text-light col-4 fs-5 main-write">Skateboard Tips You need to know</div>            
-                                      
+                <div class="col-4 right-image">
+
+                    <div class="row photo-ups">
+                        <div class="text-light col-4 fs-6 main-write">Skateboard Tips You need to know</div>
+
                     </div>
                     <div class="row">
                         <div class="col-1">
-                    <div class="img-wrapper">
-                     <div class="img-circle circleTwo "></div>
-                    <img class="author-img imgTwo" src="https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />                  
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                      </svg>
+                            <div class="img-wrapper wrapperTwo">
+                                <div class="img-circle circleTwo "></div>
+                                <img alt="" class="author-img imgTwo"
+                                    src="https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="text-light row name">Tony Andrew</div>
+                            <div class="text-light rate">53K views <span class="dot"></span>2 weeks ago </div>
+                            <div class="time-circle minute"><span class="text-light">7 min</span></div>
+
+                        </div>
                     </div>
+
+                </div>
+
+                <span class="text-light fs-3">Most Watched</span>
+
+                <div class="row video-container">
+                    <div class="col-2 video-cont me-4 ">
+                        <div class="video-time-circle">
+                            <div class="video-time">8 min</div>
+                        </div>
+
+                        <div class="video-wrapper">
+                            <video class="video" muted="">
+                                <source
+                                    src="https://player.vimeo.com/external/436572488.sd.mp4?s=eae5fb490e214deb9ff532dd98d101efe94e7a8b&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="video-circle "></div>
+                            <img alt="" class="author-img"
+                                src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                        </div>
+                        <div class="col-2 video-footer">
+                            <div class="video-by text-light video-man">Andy William <span class="green-dot"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span></div>
+                            <div class="video-name text-light">Basic how to ride your skateboard comfortly</div>
+                            <div class="video-view text-light">54K views <span class="seperate video-seperate"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span>1
+                                week ago</div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                    <div class="author-name text-light row">Tony Andrew</div>
-                    <div class="author-info text-light ">53K views <span class="dot"></span>2 weeks ago  </div> 
-                    <div class="time-circle"><span class="text-light  time ">7 min</span></div>
+                    <div class="col-2 video-cont me-4 ms-5">
+                        <div class="video-time-circle">
+                            <div class="video-time">5 min</div>
+                        </div>
+
+                        <div class="video-wrapper">
+                            <video class="video" muted="">
+                                <source
+                                    src="https://player.vimeo.com/external/449972745.sd.mp4?s=9943177fe8a6147b7bc4598259401f06ec57878a&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="video-circle "></div>
+                            <img alt="" class="author-img"
+                                src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                        </div>
+                        <div class="col-2 video-footer">
+                            <div class="video-by text-light video-man">Gerard Bind <span class="red-dot"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span></div>
+                            <div class="video-name text-light">Prepare for your first skateboard jump</div>
+                            <div class="video-view text-light">52K views <span class="seperate video-seperate"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span>2
+                                week ago</div>
+                        </div>
+                    </div>
+                    <div class="col-2 video-cont me-4 ms-5">
+                        <div class="video-time-circle">
+                            <div class="video-time">7 min</div>
+                        </div>
+
+                        <div class="video-wrapper">
+                            <video class="video" muted="">
+                                <source
+                                    src="https://player.vimeo.com/external/436553499.sd.mp4?s=0e44527f269278743db448761e35c5e39cfaa52c&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="video-circle "></div>
+                            <img alt="" class="author-img"
+                                src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                        </div>
+                        <div class="col-2 video-footer">
+                            <div class="video-by text-light video-man">John Wise <span class="red-dot"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span></div>
+                            <div class="video-name text-light">Basic how to ride your skateboard comfortly</div>
+                            <div class="video-view text-light">64K views <span class="seperate video-seperate"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span>2
+                                week ago</div>
+                        </div>
+                    </div>
+                    <div class="col-2 video-cont ms-5">
+                        <div class="video-time-circle">
+                            <div class="video-time">5 min</div>
+                        </div>
+
+                        <div class="video-wrapper">
+                            <video class="video" muted="">
+                                <source
+                                    src="https://player.vimeo.com/external/361861493.sd.mp4?s=19d8275ca755d653042a87ef28b2f0b2eabf57d0&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+
+                            </video>
+                            <div class="video-circle "></div>
+                            <img alt="" class="author-img"
+                                src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                        </div>
+                        <div class="col-2 video-footer ">
+                            <div class="video-by text-light video-man">Budi Hakim <span class="green-dot"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span></div>
+                            <div class="video-name text-light">Tips to playing skateboard on the ramp</div>
+                            <div class="video-view text-light">50K views <span class="seperate video-seperate"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-dot" viewBox="0 0 16 16">
+                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    </svg></span>1
+                                week ago</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="main-side-two row">
+                <span class="text-light fs-3">Trending</span>
+                <div class="col-7 left-video-one">
+                    <video class="video-change w-100" muted="" controls>
+                        <source
+                            src="https://player.vimeo.com/external/436572488.sd.mp4?s=eae5fb490e214deb9ff532dd98d101efe94e7a8b&profile_id=139&oauth2_token_id=57447761"
+                            type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="col-4 right-messages">
+                    <div class="row">
+                        <div class="col-5 text-light">Live Chat</div>
+                        <div class="col-7 "><svg class="text-muted" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                <path fill-rule="evenodd"
+                                    d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                            </svg><span class="text-muted"> 15,988 People</span></div>
+                    </div>
+                    <hr class="text-muted">
+
+                    <div class="row message-row">
+                        <div class="col-3">
+                            <div class="img-wrapper">
+                                <div class="img-circle "></div>
+                                <img alt="" class="author-img"
+                                    src="https://images.unsplash.com/photo-1560941001-d4b52ad00ecc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="author-name text-light row">Thomas Hope <svg class="red-dot col-3"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                </svg></div>
+
+                            <div class="author-info text-muted ">Hello I'm proud of it Thanks for everyone to like me
+                                waiting...</div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row message-row">
+                        <div class="col-3">
+                            <div class="img-wrapper">
+                                <div class="img-circle "></div>
+                                <img alt="" class="author-img"
+                                    src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="author-name text-light row">Andy William <svg class="green-dot col-3"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                </svg></div>
+
+                            <div class="author-info text-muted ">It's absolutly crazy for me.. I love all of you! </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row message-row">
+                        <div class="col-3">
+                            <div class="img-wrapper">
+                                <div class="img-circle "></div>
+                                <img alt="" class="author-img"
+                                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="author-name text-light row">Chris Solom <svg class="green-dot col-3"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                </svg></div>
+
+                            <div class="author-info text-muted ">It's amazing that see that but tell the truth.. </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row message-row">
+                        <div class="col-3">
+                            <div class="img-wrapper">
+                                <div class="img-circle "></div>
+                                <img alt="" class="author-img"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="author-name text-light row">Juris McRenen <svg class="green-dot col-3"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                </svg></div>
+
+                            <div class="author-info text-muted ">Wow! it doesn't work at all!</div>
+                        </div>
+                    </div>
                     
+                    <div class="messageFirst">
+                    <input type="text" class=" messaging text-muted" placeholder="        Your message.." readonly></input>
+                    <svg class=" svg-message" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <svg class="arrow-message" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z" />
+                    </svg> 
+                    </div>
+                    <div class="row modal-message">
+                        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                          </svg>
+                        <div class="text-light fs-4 send-text">Send a message to...</div>
+                        <input class="nameInput form-control" type="text" placeholder="Name Lastname" required>
+                        <input class="writeInput form-control" type="text" placeholder="Message" value="" required>
+                        <button type="button" class="btn-send">Send <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                            <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                          </svg></button>
+                    </div>
+
                 </div>
-                </div>
-                </div>
+            </div>
+
+
+
+
         </div>
     </div>
 
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

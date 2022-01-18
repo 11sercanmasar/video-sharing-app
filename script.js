@@ -7,12 +7,16 @@ let source = document.querySelector("source");
 let URL = source.getAttribute("src").toString();
 let vid = document.querySelectorAll(".video");
 let videoChange = document.querySelector(".video-change")
-
-
+const messageArea=document.querySelector(".message-area");
+const messageInput = document.querySelector(".messaging");
+const messageBox = document.querySelector(".modal-message");
+const sendButton =document.querySelector(".btn-send");
+const nameLastname = document.querySelector(".nameInput");
+const writeMessage = document.querySelector(".writeInput");
+const messageFirst = document.querySelector(".messageFirst");
 
 document.addEventListener("DOMContentLoaded",  windowLoad =>{
-    videoSectionTwo.style.display="none"; 
-   
+videoSectionTwo.style.display="none";    
 })
 
 trendingButton.addEventListener("click", changeView =>{
@@ -44,3 +48,48 @@ document.querySelector(".main-side-two").addEventListener("mouseover", function(
         e.target.play();     
     }
 });
+
+document.querySelector(".close").addEventListener("click", closeModal=>{
+    messageBox.style.display="none";
+});
+document.addEventListener("DOMContentLoaded", closeModal=>{
+    messageBox.style.display="none";
+});
+messageInput.addEventListener("click", showBox=>{
+    messageBox.style.display="block";
+})
+
+
+sendButton.addEventListener("click", sendMessage=>{
+ 
+    messageArea.innerHTML+= ` <div class="row message-row me-0">
+    <div class="col-3">
+        <div class="img-wrapper">
+            <div class="img-circle "></div>
+            <img alt="" class="author-img"
+                src="https://yt3.ggpht.com/ytc/AKedOLQK8LDRYO21ZQtGiAXeYmqOTmWsA9f6guyTSUWM=s900-c-k-c0x00ffffff-no-rj" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </svg>
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="author-name text-light row">${nameLastname.value} <svg class="red-dot col-3"
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-dot" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg></div>
+
+        <div class="author-info text-muted ">${writeMessage.value}</div>
+    </div>
+</div> `
+
+writeMessage.value="";
+nameLastname.value="";
+messageBox.style.display="none";
+
+
+})
+
