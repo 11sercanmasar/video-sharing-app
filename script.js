@@ -14,17 +14,21 @@ const sendButton =document.querySelector(".btn-send");
 const nameLastname = document.querySelector(".nameInput");
 const writeMessage = document.querySelector(".writeInput");
 const messageFirst = document.querySelector(".messageFirst");
+const formSection = document.querySelector(".form-section");
 
 document.addEventListener("DOMContentLoaded",  windowLoad =>{
-videoSectionTwo.style.display="none";    
+videoSectionTwo.style.display="none"; 
+formSection .style.display="none";   
 })
 
 trendingButton.addEventListener("click", changeView =>{
 videoSection.style.display= "none";
 videoSectionTwo.style.display="flex";
+formSection .style.display="block";
 });
 
 discoverButton.addEventListener("click", showView =>{
+    formSection .style.display="none";
     videoSectionTwo.style.display="none";
     videoSection.style.display = "flex";
     
@@ -93,3 +97,19 @@ messageBox.style.display="none";
 
 })
 
+document.getElementById("addVideo").addEventListener("click", addingVideo=>{
+    let url = document.getElementById('URL').value;
+   let videoCont= document.querySelector(".left-video-one");
+   videoCont.innerHTML = "";
+   videoCont.innerHTML = `
+   <video class="video-change w-100"  controls >
+   <source id="videoAdd"
+       src="${url}"
+      
+    </video>
+   
+   
+   `
+
+   url = "";  
+})

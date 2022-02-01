@@ -1,12 +1,13 @@
 :root{
     --placeholder : #ffffff;
+    background-color: #252836;
     
 }
  
  .cont-all{
     background-color: #1f1d2d;
     width: 1080px;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -387,15 +388,16 @@ width: 150px;
 
 .messaging{
     position: fixed;
-    margin-top: -205px !important ;
-    z-index: 2;  
+    z-index: 2; 
+    border-radius: 25px !important;
+    margin-top:-200px;
 }
 
 input{
     background: $input-bg;
     border: none;
     border: 1px solid white;
-    border-radius: 25px;
+   
      
 }
 
