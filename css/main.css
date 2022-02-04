@@ -11025,7 +11025,7 @@ fieldset:disabled .btn {
   position: fixed;
   z-index: 2;
   border-radius: 25px !important;
-  margin-top: -200px;
+  top: 320px;
 }
 
 input {
@@ -11105,4 +11105,22 @@ input {
 
 .modal-message .nameInput::placeholder {
   color: var(--placeholder);
+}
+
+.event .logo-left {
+  background-color: #32a7e2;
+}
+
+.event .logo-left svg {
+  color: #ffffff;
+}
+
+.event .col-name {
+  color: #ffffff;
+}
+
+@media (min-width: 1870px) {
+  .cont-all {
+    height: 70vh;
+  }
 }

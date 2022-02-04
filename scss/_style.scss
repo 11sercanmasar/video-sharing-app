@@ -34,7 +34,7 @@
         color: #ffffff;
     }
     }
-.row2:hover{ 
+ .row2:hover{ 
         .logo-left{
         background-color: #32a7e2;
         svg{
@@ -390,7 +390,9 @@ width: 150px;
     position: fixed;
     z-index: 2; 
     border-radius: 25px !important;
-    margin-top:-200px;
+    top: 320px;  
+    
+    
 }
 
 input{
@@ -471,6 +473,25 @@ input{
     background-size: cover;
     border-radius: 13px;
 }
+
+.event{ 
+    .logo-left{
+    background-color: #32a7e2;
+    svg{
+        color: #ffffff;
+    } 
+    }
+    .col-name{
+        color: #ffffff;
+    }
+}
+
+@media (min-width:1870px) {
+    .cont-all{
+        height: 70vh;
+    }
+}
+
 
 
    

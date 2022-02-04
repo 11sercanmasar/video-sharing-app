@@ -112,4 +112,15 @@ document.getElementById("addVideo").addEventListener("click", addingVideo=>{
    `
 
    url = "";  
+});
+
+document.getElementById('like').addEventListener('click', function plus(){
+    this.innerHTML = '<i class="fas fa-thumbs-up"></i> Liked';
+    this.classList.add('bg-primary','text-light');
+   
+});
+
+document.querySelector('.row2').addEventListener('click', function colorized(){
+    this.classList.add("event");
 })
+
